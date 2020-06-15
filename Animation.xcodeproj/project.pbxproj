@@ -58,7 +58,6 @@
 		1B50BB4C2497FE9F00FEB24B = {
 			isa = PBXGroup;
 			children = (
-				1B50BB662497FEA200FEB24B /* Info.plist */,
 				1B50BB572497FE9F00FEB24B /* Animation */,
 				1B50BB562497FE9F00FEB24B /* Products */,
 				742EB7B021D1DBA43F54946C /* Pods */,
@@ -91,6 +90,7 @@
 				1B50BB582497FE9F00FEB24B /* AppDelegate.swift */,
 				1B50BB5A2497FE9F00FEB24B /* SceneDelegate.swift */,
 				1B50BB612497FEA200FEB24B /* Assets.xcassets */,
+				1B50BB662497FEA200FEB24B /* Info.plist */,
 			);
 			path = Supportingfiles;
 			sourceTree = "<group>";
@@ -395,7 +395,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34VDSPZYU9;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Animation/Supportingfiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,7 +414,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34VDSPZYU9;
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Animation/Supportingfiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
