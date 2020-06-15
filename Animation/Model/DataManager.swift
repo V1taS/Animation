@@ -11,7 +11,6 @@ import Foundation
 class DataManager {
     
     static let shared = DataManager()
-    private init() { }
     
     let nameAnimation = [
         "slideLeft",
@@ -77,4 +76,6 @@ class DataManager {
     
     let forceAnimation = Int.random(in: 1...2)
     let duration = Int.random(in: 1...2)
+    
+    private init() { }
 }

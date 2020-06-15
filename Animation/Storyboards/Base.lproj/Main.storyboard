@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNI-fO-3hN">
-                                <rect key="frame" x="20" y="772" width="374" height="30"/>
+                                <rect key="frame" x="41.5" y="478" width="237" height="30"/>
                                 <color key="backgroundColor" name="blackMode"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="FZf-Wc-kc5"/>
@@ -30,58 +30,73 @@
                                     <action selector="buttonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="DCK-V7-JLD"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLl-YS-BlD">
-                                <rect key="frame" x="17.5" y="104" width="379" height="202"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLl-YS-BlD" customClass="SpringView" customModule="Spring">
+                                <rect key="frame" x="40" y="60" width="240" height="128"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Параметры используемой анимации:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CCm-oH-2hI">
-                                        <rect key="frame" x="16" y="16" width="347" height="21.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21.5" id="i1W-mv-1YL"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                        <color key="textColor" name="whiteMode"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Параметры используемой анимации:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eia-sB-mf7">
-                                        <rect key="frame" x="16" y="69.5" width="347" height="21.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21.5" id="Qbp-MH-xml"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <color key="textColor" name="whiteMode"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Параметры используемой анимации:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NTd-0T-bjO">
-                                        <rect key="frame" x="16" y="99" width="347" height="21.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21.5" id="ssj-jB-wbi"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <color key="textColor" name="whiteMode"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Vww-CB-Weg">
+                                        <rect key="frame" x="16" y="16" width="208" height="96"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qhZ-o5-DR7">
+                                                <rect key="frame" x="0.0" y="0.0" width="208" height="46.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название анимации:   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wqe-qY-Jd6">
+                                                        <rect key="frame" x="18.5" y="0.0" width="171" height="23.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <color key="textColor" name="whiteMode"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yfghbvth yfpdfybt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eia-sB-mf7">
+                                                        <rect key="frame" x="36.5" y="23.5" width="135" height="23"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <color key="textColor" name="whiteMode"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="23u-L8-nlF">
+                                                <rect key="frame" x="0.0" y="49.5" width="208" height="46.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    Изгиб анимации:   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="98l-Ct-9Gl">
+                                                        <rect key="frame" x="25.5" y="0.0" width="157.5" height="23.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <color key="textColor" name="whiteMode"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Напрмисверфсс" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NTd-0T-bjO">
+                                                        <rect key="frame" x="41" y="23.5" width="126.5" height="23"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <color key="textColor" name="whiteMode"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" name="blackMode"/>
                                 <color key="tintColor" name="whiteMode"/>
                                 <constraints>
-                                    <constraint firstItem="NTd-0T-bjO" firstAttribute="top" secondItem="eia-sB-mf7" secondAttribute="bottom" constant="8" id="Dh5-pV-EmU"/>
-                                    <constraint firstItem="NTd-0T-bjO" firstAttribute="leading" secondItem="RLl-YS-BlD" secondAttribute="leading" constant="16" id="EfN-hA-W3I"/>
-                                    <constraint firstItem="CCm-oH-2hI" firstAttribute="top" secondItem="RLl-YS-BlD" secondAttribute="top" constant="16" id="JbG-3w-wx5"/>
-                                    <constraint firstItem="eia-sB-mf7" firstAttribute="leading" secondItem="RLl-YS-BlD" secondAttribute="leading" constant="16" id="Pzq-ph-d6H"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vww-CB-Weg" secondAttribute="trailing" constant="16" id="D4l-KW-BCL"/>
+                                    <constraint firstItem="Vww-CB-Weg" firstAttribute="top" secondItem="RLl-YS-BlD" secondAttribute="top" constant="16" id="FQv-kB-qnR"/>
                                     <constraint firstAttribute="width" secondItem="RLl-YS-BlD" secondAttribute="height" multiplier="379:202" id="WNJ-Mh-CcZ"/>
-                                    <constraint firstItem="eia-sB-mf7" firstAttribute="top" secondItem="CCm-oH-2hI" secondAttribute="bottom" constant="32" id="Zd4-H6-QBu"/>
-                                    <constraint firstItem="CCm-oH-2hI" firstAttribute="leading" secondItem="RLl-YS-BlD" secondAttribute="leading" constant="16" id="Zg1-gT-oq0"/>
-                                    <constraint firstAttribute="trailing" secondItem="CCm-oH-2hI" secondAttribute="trailing" constant="16" id="n8j-hf-8FU"/>
-                                    <constraint firstAttribute="trailing" secondItem="eia-sB-mf7" secondAttribute="trailing" constant="16" id="sTb-Um-p9b"/>
-                                    <constraint firstAttribute="trailing" secondItem="NTd-0T-bjO" secondAttribute="trailing" constant="16" id="vGh-tX-Hew"/>
+                                    <constraint firstItem="Vww-CB-Weg" firstAttribute="leading" secondItem="RLl-YS-BlD" secondAttribute="leading" constant="16" id="WQz-bh-dBi"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vww-CB-Weg" secondAttribute="bottom" constant="16" id="kSx-h5-q1J"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 из 26" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9Pk-64-nne">
+                                <rect key="frame" x="120" y="241" width="80.5" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" name="blackMode"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="9Pk-64-nne" firstAttribute="top" secondItem="RLl-YS-BlD" secondAttribute="bottom" constant="53" id="KO3-qt-J9Y"/>
                             <constraint firstItem="fNI-fO-3hN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bNv-U5-dZ2"/>
                             <constraint firstItem="RLl-YS-BlD" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="379:896" id="eA7-zd-cve"/>
                             <constraint firstItem="fNI-fO-3hN" firstAttribute="width" secondItem="RLl-YS-BlD" secondAttribute="width" multiplier="0.986807" id="hMU-ut-kK5"/>
+                            <constraint firstItem="9Pk-64-nne" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k7X-C9-zWm"/>
                             <constraint firstItem="RLl-YS-BlD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mcl-kt-6z7"/>
                             <constraint firstItem="RLl-YS-BlD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="sUG-wU-oDS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fNI-fO-3hN" secondAttribute="bottom" constant="60" id="y0R-5B-a9M"/>
@@ -90,9 +105,10 @@
                     </view>
                     <connections>
                         <outlet property="buttonOutlet" destination="fNI-fO-3hN" id="ga0-fE-GHq"/>
+                        <outlet property="currentNumberOutlet" destination="9Pk-64-nne" id="gGS-2x-kzJ"/>
                         <outlet property="durationAnimationLabel" destination="NTd-0T-bjO" id="ct4-XI-EGd"/>
                         <outlet property="nameAnimationLabel" destination="eia-sB-mf7" id="jk0-A9-fWx"/>
-                        <outlet property="screenViewOutlet" destination="RLl-YS-BlD" id="tyJ-5l-hGi"/>
+                        <outlet property="screenViewOutlet" destination="RLl-YS-BlD" id="nMW-qz-Y0b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -16,7 +16,6 @@ struct Model {
 extension Model {
     
     static func getListAnimation() -> [Model] {
-        
         var listAnimation: [Model] = []
         
         for index in 0..<DataManager.shared.nameAnimation.count {
